@@ -169,9 +169,10 @@ class RelayEntry(BaseModel):
     field_2: str | None = None  # 所属设备
     field_3: str | None = None  # 电气特性
     field_4: str | None = None  # 接点电阻
-    field_5: str | None = None  # 检修日期
-    field_6: str | None = None  # 下次检修日
-    field_7: str | None = None  # 继电器状态
+    field_5: str | None = None  # 检修周期
+    field_6: str | None = None  # 上次检修日
+    field_7: str | None = None  # 下次检修日
+    field_8: str | None = None  # 继电器状态
 
 class FuseEntry(BaseModel):
     """熔断器明细结构。"""
