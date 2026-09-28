@@ -13,6 +13,7 @@ const Axlecounter = () => import('@/views/axlecounter/index.vue')
 const Dispatchcenter = () => import('@/views/dispatchcenter/index.vue')
 const Maintenancewindow = () => import('@/views/maintenancewindow/index.vue')
 const Relay = () => import('@/views/relay/index.vue')
+const RelayDetail = () => import('@/views/relay/detail.vue')
 const Fuse = () => import('@/views/fuse/index.vue')
 const Lightning = () => import('@/views/lightning/index.vue')
 const Emergencyresp = () => import('@/views/emergencyresp/index.vue')
@@ -38,6 +39,7 @@ const router = createRouter({
     { path: '/dispatchcenter', name: 'dispatchcenter', component: Dispatchcenter },
     { path: '/maintenancewindow', name: 'maintenancewindow', component: Maintenancewindow },
     { path: '/relay', name: 'relay', component: Relay },
+    { path: '/relay/:id', name: 'relay-detail', component: RelayDetail },
     { path: '/fuse', name: 'fuse', component: Fuse },
     { path: '/lightning', name: 'lightning', component: Lightning },
     { path: '/emergencyresp', name: 'emergencyresp', component: Emergencyresp },
